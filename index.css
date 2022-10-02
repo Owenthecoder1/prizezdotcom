@@ -2,4 +2,8 @@ div {
 	opacity:0;
 	color:white;
 	cursor:default;
+	margin-bottom:0px;
+}
+p{
+	margin-top:4px;
 }

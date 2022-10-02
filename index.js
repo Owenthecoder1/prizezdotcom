@@ -1,5 +1,6 @@
 var achievements = document.getElementById("achievements")
 var membership = document.getElementById("membership")
+var freetrial = document.getElementById("fretryil")
 
 function achievementsRun (){
 	alert("To access your achievements you need to have a membership")
@@ -14,5 +15,21 @@ function membershipRun (){
 	}
 }
 
+function winRun (){
+	document.body.innerHTML = "U R WINNAR"
+}
+
+function freetrialRun (){
+	var confirm = confirm("To access your free trial, you must agree to our terms and conditions. Do you agree?")
+	if(confirm == true){
+		document.body.innerHTML = "<a href='https://www.youtube.com/watch?v=iik25wqIuFo'>Begin!</a>"
+	}else{
+		document.body.innerHTML = "<!DOCTYPE html><html><head><link rel='stylesheet' href='index.css'></head><center style = 'font-size: 50px'>Hello Prize Reciever<div style = 'font-size: 12px' id='win'>WIN</div></center><p>Welcom to prizezdotcom! This is a website where you can claim your prizes for completing achievements. Click the button below to view your achievements. If you like out services and want to become a member, click the other button. Thank you!<br></br><br></br><br></br><br></br><br></br><br></br><center style = 'font-size: 50px'><u><span id='achievements'>Achievements</span><br></br><br></br><span id='membership'>Membership</span></u></center></p><script type='text/javascript' src='index.js'></script></html>"
+		var WINNAR = document.getElementById("win")
+		WINNAR.addEventListener("click",winRun)
+	}
+}
+
 achievements.addEventListener("click", achievementsRun)
 membership.addEventListener("click", membershipRun)
+freetrial.addEventListener("click",freetrialRun)

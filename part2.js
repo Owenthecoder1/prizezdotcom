@@ -6,8 +6,17 @@ function RICKROLLEDLOL (){
 }
 
 function asteriskRun (){
-	alert("I LIKE TRAINS")
+	var rikrol = prompt("Do you like rickrolls? Y/N")
+	if(rikrol == "Y" or rikrol == "N"){
+		window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";
+	}else{
+		stage2Initiate()
+	}
 }
 
 rickroll.addEventListener("click",RICKROLLEDLOL)
 asterisk.addEventListener("click",asteriskRun)
+
+function stage2Initiate(){
+
+}

@@ -28,12 +28,14 @@ function confirmationing (){
 }
 
 function stage2Initiate(){
-	var prizeWant = prompt("Please input the prize you would like to recieve. Coconut Plushie/Exercise Ball/Rick Roll/2 Hugs/1 Kiss")
-	if(prizeWant == "1 Kiss" || prizeWant == "Exercise Ball" || prizeWant == "2 Hugs" || prizeWant == "Coconut Plushie"){
+	var prizeWant = prompt("Please input the prize you would like to recieve. 2 Hugs/Exercise Ball/Rick Roll/Coconut Plushie/1 Kiss")
+	if(prizeWant == "1 Kiss" || prizeWant == "Exercise Ball" || prizeWant == "2 Hugs"){
 		alert("Sadly, that prize is out of stock. You will recieve a rick roll instead")
 		window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";
 	}else if(prizeWant == "Rick Roll"){
-		alert("There were many reports of that prize being annoying, so you will not recieve your rick roll. Sorry!")
+		window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";
+	}else if(prizeWant == "Coconut Plushie"){
+		alert("Sadly, that prize is out of stock.")
 		confirmationing()
 	}else{
 		alert("That prize does not exist")

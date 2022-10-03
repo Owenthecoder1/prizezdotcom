@@ -1,5 +1,5 @@
 var rickroll = document.getElementById("begin")
-var asterisk = document.getElementByTagName("span")
+var asterisk = document.getElementsByTagName("span")
 
 function RICKROLLEDLOL (){
 	window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";

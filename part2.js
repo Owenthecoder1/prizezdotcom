@@ -7,7 +7,7 @@ function RICKROLLEDLOL (){
 
 function asteriskRun (){
 	var rikrol = prompt("Do you like rickrolls? Y/N")
-	if(rikrol == "Y" or rikrol == "N"){
+	if(rikrol == "Y" || rikrol == "N"){
 		window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";
 	}else{
 		stage2Initiate()
